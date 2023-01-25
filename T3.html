@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Task3_Shivang</title>
+  <style media="screen">
+    .bg-lightgreen {
+    background-color: lightgreen;
+    }
+  </style>
+</head>
+<body class="bg-lightblue">
+<h1>Web Technology</h1>
+<button onclick = "changeThisPageFunc();">Click Me</button>
+<script type = "text/javascript">
+changeThisPageFunc =  function() {
+alert("Background color change begins");
+document.body.className = "bg-lightgreen";
+alert("Background color change finished");
+document.body.innerHTML = "<h1>LAB 3</h1>";
+document.body.innerHTML += "<button>Click Me</button>";
+}
+</script>
+</body>
+</html>

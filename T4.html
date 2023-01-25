@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task4_Shivang</title>
+    <style>
+      /* Styles for initial content within main section */
+      .initial-content {
+        font-size: 18px;
+        color: black;
+      }
+      /* Styles for new content within main section */
+      .new-content {
+        font-size: 24px;
+        color: blue;
+        background-color: lightblue;
+      }
+      li{
+        display: inline-block;
+        padding:10px;
+      }
+      header{
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Welcome to my website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="initial-content">
+        <p>This is the initial content within the main section.</p>
+        <button id="replace-button">Replace content</button>
+      </div>
+    </main>
+    <script>
+
+      var button = document.getElementById("replace-button");
+      var main = document.querySelector("main");
+
+
+      button.addEventListener("click", function() {
+
+        main.innerHTML = '<div class="new-content"><p>This is the new content within the main section.</p></div>';
+      });
+    </script>
+  </body>
+</html>
